@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dang ky</title>
+    <style>
+        .mytable{
+            background-color: darkkhaki
+        }
+        .mytitle{
+            font-size: 150%;
+            color: blue;
+            text-align: left;
+            background-color: aquamarine;
+        }
+        .myheader{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <table class="mytable" >
+        <tr>
+            <td colspan="5"class="mytitle">ĐĂNG KÝ HỌC VIÊN</td>
+        </tr>
+        <tr>
+            <td class="myheader">Họ và tên</td>
+            <td colspan="3"><input type="text " size="30"></td>
+        </tr>
+        <tr>
+            <td class="myheader">Ngày sinh</td>
+            <td colspan="2"><input type="text" size="15"></td>
+        </tr>
+        <tr>
+            <td class="myheader">Giới tính</td>
+            <td>
+                <input type="radio"name="sex"id="sex-male" value="male" checked="true">
+                <label for="sex-male">Nam</label>
+                <input type="radio"name="sex"id="sex-female" value="female">
+                <label for="sex-female">Nữ</label>
+            </td>
+
+
+        </tr>
+        <tr>
+            <td class="myheader">Địa chỉ</td>
+            <td colspan="3"><textarea name="adress" cols="50" rows="5" aria-required="true"></textarea> </td>
+        </tr>
+        <tr>
+            <td class="myheader">Lớp</td>
+            <td>
+                <select name="code" id="code">
+                    <option value="java">Lớp Java</option>
+                    <option value="php">Lớp PHP</option>
+                    <option selected value="notselected">--Chọn lớp--</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="myheader">Email</td>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="myheader">Điện thoại</td>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit"value="Đăng ký">
+                <input type="reset" value="nhập lại">
+            </td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
